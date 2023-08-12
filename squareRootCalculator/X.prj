@@ -1,0 +1,3 @@
+vhdl work "FA.vhd"
+vhdl work "CAS.vhd"
+vhdl work "X.vhd"

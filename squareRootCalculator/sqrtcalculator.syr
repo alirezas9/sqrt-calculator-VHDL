@@ -1,0 +1,384 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: sqrtcalculator.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "sqrtcalculator.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "sqrtcalculator"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : sqrtcalculator
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "F:\UNI\projects\ise\squareRootCalculator\FA.vhd" into library work
+Parsing entity <FA>.
+Parsing architecture <Behavioral> of entity <fa>.
+Parsing VHDL file "F:\UNI\projects\ise\squareRootCalculator\CAS.vhd" into library work
+Parsing entity <CAS>.
+Parsing architecture <Behavioral> of entity <cas>.
+Parsing VHDL file "F:\UNI\projects\ise\squareRootCalculator\Y.vhd" into library work
+Parsing entity <y>.
+Parsing architecture <Behavioral> of entity <y>.
+Parsing VHDL file "F:\UNI\projects\ise\squareRootCalculator\X.vhd" into library work
+Parsing entity <X>.
+Parsing architecture <Behavioral> of entity <x>.
+Parsing VHDL file "F:\UNI\projects\ise\squareRootCalculator\sqrtcalculator.vhd" into library work
+Parsing entity <sqrtcalculator>.
+Parsing architecture <Behavioral> of entity <sqrtcalculator>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <sqrtcalculator> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <X> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <CAS> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <FA> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <y> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <sqrtcalculator>.
+    Related source file is "F:\UNI\projects\ise\squareRootCalculator\sqrtcalculator.vhd".
+INFO:Xst:3210 - "F:\UNI\projects\ise\squareRootCalculator\sqrtcalculator.vhd" line 50: Output port <S11> of the instance <Y1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\UNI\projects\ise\squareRootCalculator\sqrtcalculator.vhd" line 50: Output port <S21> of the instance <Y1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\UNI\projects\ise\squareRootCalculator\sqrtcalculator.vhd" line 90: Output port <S11> of the instance <Y2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\UNI\projects\ise\squareRootCalculator\sqrtcalculator.vhd" line 90: Output port <S21> of the instance <Y2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\UNI\projects\ise\squareRootCalculator\sqrtcalculator.vhd" line 149: Output port <S11> of the instance <Y4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\UNI\projects\ise\squareRootCalculator\sqrtcalculator.vhd" line 149: Output port <DO1> of the instance <Y4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\UNI\projects\ise\squareRootCalculator\sqrtcalculator.vhd" line 149: Output port <DO2> of the instance <Y4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\UNI\projects\ise\squareRootCalculator\sqrtcalculator.vhd" line 149: Output port <S21> of the instance <Y4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\UNI\projects\ise\squareRootCalculator\sqrtcalculator.vhd" line 149: Output port <S22> of the instance <Y4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\UNI\projects\ise\squareRootCalculator\sqrtcalculator.vhd" line 169: Output port <DO1> of the instance <Y5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\UNI\projects\ise\squareRootCalculator\sqrtcalculator.vhd" line 169: Output port <DO2> of the instance <Y5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\UNI\projects\ise\squareRootCalculator\sqrtcalculator.vhd" line 169: Output port <S21> of the instance <Y5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\UNI\projects\ise\squareRootCalculator\sqrtcalculator.vhd" line 169: Output port <S22> of the instance <Y5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\UNI\projects\ise\squareRootCalculator\sqrtcalculator.vhd" line 189: Output port <DO1> of the instance <Y6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\UNI\projects\ise\squareRootCalculator\sqrtcalculator.vhd" line 189: Output port <DO2> of the instance <Y6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\UNI\projects\ise\squareRootCalculator\sqrtcalculator.vhd" line 189: Output port <S21> of the instance <Y6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\UNI\projects\ise\squareRootCalculator\sqrtcalculator.vhd" line 189: Output port <S22> of the instance <Y6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\UNI\projects\ise\squareRootCalculator\sqrtcalculator.vhd" line 209: Output port <Do> of the instance <X4> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <sqrtcalculator> synthesized.
+
+Synthesizing Unit <X>.
+    Related source file is "F:\UNI\projects\ise\squareRootCalculator\X.vhd".
+INFO:Xst:3210 - "F:\UNI\projects\ise\squareRootCalculator\X.vhd" line 33: Output port <DO> of the instance <CAS_a> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\UNI\projects\ise\squareRootCalculator\X.vhd" line 36: Output port <DO> of the instance <CAS_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\UNI\projects\ise\squareRootCalculator\X.vhd" line 39: Output port <DO> of the instance <CAS_c> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\UNI\projects\ise\squareRootCalculator\X.vhd" line 42: Output port <DO> of the instance <CAS_d> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\UNI\projects\ise\squareRootCalculator\X.vhd" line 45: Output port <DO> of the instance <CAS_e> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\UNI\projects\ise\squareRootCalculator\X.vhd" line 48: Output port <DO> of the instance <CAS_f> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\UNI\projects\ise\squareRootCalculator\X.vhd" line 51: Output port <DO> of the instance <CAS_g> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <X> synthesized.
+
+Synthesizing Unit <CAS>.
+    Related source file is "F:\UNI\projects\ise\squareRootCalculator\CAS.vhd".
+    Summary:
+Unit <CAS> synthesized.
+
+Synthesizing Unit <FA>.
+    Related source file is "F:\UNI\projects\ise\squareRootCalculator\FA.vhd".
+    Summary:
+Unit <FA> synthesized.
+
+Synthesizing Unit <y>.
+    Related source file is "F:\UNI\projects\ise\squareRootCalculator\Y.vhd".
+INFO:Xst:3210 - "F:\UNI\projects\ise\squareRootCalculator\Y.vhd" line 25: Output port <DO> of the instance <CAS_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\UNI\projects\ise\squareRootCalculator\Y.vhd" line 28: Output port <DO> of the instance <CAS_j> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\UNI\projects\ise\squareRootCalculator\Y.vhd" line 31: Output port <DO> of the instance <CAS_k> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\UNI\projects\ise\squareRootCalculator\Y.vhd" line 34: Output port <DO> of the instance <CAS_h> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <y> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Xors                                                 : 156
+ 1-bit xor2                                            : 156
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Xors                                                 : 156
+ 1-bit xor2                                            : 156
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <sqrtcalculator> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block sqrtcalculator, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : sqrtcalculator.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 49
+#      LUT2                        : 4
+#      LUT3                        : 5
+#      LUT4                        : 8
+#      LUT5                        : 7
+#      LUT6                        : 25
+# IO Buffers                       : 24
+#      IBUF                        : 16
+#      OBUF                        : 8
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice LUTs:                   49  out of  63400     0%  
+    Number used as Logic:                49  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     49
+   Number with an unused Flip Flop:      49  out of     49   100%  
+   Number with an unused LUT:             0  out of     49     0%  
+   Number of fully used LUT-FF pairs:     0  out of     49     0%  
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                          24
+ Number of bonded IOBs:                  24  out of    210    11%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 13.247ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 79759 / 8
+-------------------------------------------------------------------------
+Delay:               13.247ns (Levels of Logic = 21)
+  Source:            a<14> (PAD)
+  Destination:       q<0> (PAD)
+
+  Data Path: a<14> to q<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            13   0.001   0.749  a_14_IBUF (X1/CAS_c/FA1/t0)
+     LUT6:I0->O            2   0.097   0.516  X2/CAS_d/Mxor_t0_xo<0>1 (X2/CAS_d/t0)
+     LUT5:I2->O            2   0.097   0.698  X2/CAS_d/FA1/Cout1 (n0012<1>)
+     LUT6:I0->O           13   0.097   0.612  Y1/CAS_j/FA1/Cout (Y2/CAS_h/t0)
+     LUT5:I1->O            2   0.097   0.561  Y3/CAS_h/Mxor_t0_xo<0>1 (Y3/CAS_h/t0)
+     LUT5:I1->O            2   0.097   0.688  Y3/CAS_h/FA1/Cout1 (t<6>)
+     LUT6:I1->O           13   0.097   0.351  Y2/CAS_h/FA1/Cout (Y2/CAS_j/t0)
+     LUT6:I5->O            2   0.097   0.688  Y3/CAS_k/Mxor_t0_xo<0>1 (Y3/CAS_k/t0)
+     LUT6:I1->O            2   0.097   0.561  Y3/CAS_k/FA1/Cout1 (Y3/C1)
+     LUT4:I0->O            2   0.097   0.688  Y3/CAS_j/FA1/Cout1 (t<9>)
+     LUT6:I1->O           11   0.097   0.341  Y2/CAS_j/FA1/Cout (Y4/CAS_h/t0)
+     LUT6:I5->O            2   0.097   0.698  Y6/CAS_i/FA1/Cout1 (Y6/C0)
+     LUT6:I0->O            2   0.097   0.697  Y6/CAS_h/FA1/Cout1 (t<21>)
+     LUT6:I0->O            3   0.097   0.521  Y5/CAS_i/FA1/Cout1 (Y5/C0)
+     LUT4:I1->O            1   0.097   0.683  Y5/CAS_h/FA1/Cout1 (t<16>)
+     LUT6:I1->O            7   0.097   0.323  Y4/CAS_h/FA1/Cout (Y4/CAS_j/t0)
+     LUT6:I5->O            2   0.097   0.688  Y5/CAS_k/Mxor_t0_xo<0>1 (Y5/CAS_k/t0)
+     LUT6:I1->O            1   0.097   0.683  Y4/CAS_j/FA1/Cout2 (Y4/CAS_j/FA1/Cout1)
+     LUT5:I0->O            1   0.097   0.379  Y4/CAS_j/FA1/Cout4 (Y4/CAS_j/FA1/Cout4)
+     LUT6:I4->O            1   0.097   0.279  Y4/CAS_j/FA1/Cout5 (q_0_OBUF)
+     OBUF:I->O                 0.000          q_0_OBUF (q<0>)
+    ----------------------------------------
+    Total                     13.247ns (1.844ns logic, 11.403ns route)
+                                       (13.9% logic, 86.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 8.04 secs
+ 
+--> 
+
+Total memory usage is 4617996 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :   29 (   0 filtered)
+

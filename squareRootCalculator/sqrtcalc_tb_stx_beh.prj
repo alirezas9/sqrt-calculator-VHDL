@@ -1,0 +1,6 @@
+vhdl isim_temp "FA.vhd"
+vhdl isim_temp "CAS.vhd"
+vhdl isim_temp "Y.vhd"
+vhdl isim_temp "X.vhd"
+vhdl isim_temp "sqrtcalculator.vhd"
+vhdl isim_temp "sqrtcalc_tb.vhd"

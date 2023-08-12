@@ -1,0 +1,28 @@
+Command line:
+   sqrtcalc_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  12396
+
+Tue Apr 04 02:14:46 2023
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 5155.02 Meg
+
+ Total Signals          : 1099
+ Total Nets             : 486
+ Total Signal Drivers   : 468
+ Total Blocks           : 118
+ Total Primitive Blocks : 54
+ Total Processes        : 468
+ Total Traceable Variables  : 13
+ Total Scalar Nets and Variables : 969
+
+ Total Simulation Time: 0.0625 sec
+
+ Current Memory Usage: 4683.16 Meg
+
+Tue Apr 04 02:18:56 2023
+

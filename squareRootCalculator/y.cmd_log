@@ -1,0 +1,17 @@
+xst -intstyle ise -ifn "F:/UNI/projects/ise/squareRootCalculator/y.xst" -ofn "F:/UNI/projects/ise/squareRootCalculator/y.syr" 
+xst -intstyle ise -ifn "F:/UNI/projects/ise/squareRootCalculator/y.xst" -ofn "F:/UNI/projects/ise/squareRootCalculator/y.syr" 
+xst -intstyle ise -ifn "F:/UNI/projects/ise/squareRootCalculator/y.xst" -ofn "F:/UNI/projects/ise/squareRootCalculator/y.syr" 
+xst -intstyle ise -ifn "F:/UNI/projects/ise/squareRootCalculator/y.xst" -ofn "F:/UNI/projects/ise/squareRootCalculator/y.syr" 
+xst -intstyle ise -ifn "F:/UNI/projects/ise/squareRootCalculator/y.xst" -ofn "F:/UNI/projects/ise/squareRootCalculator/y.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 y.ngc y.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -timing -power off -o y_map.ncd y.ngd y.pcf 
+par -w -intstyle ise -ol high -mt off y_map.ncd y.ncd y.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml y.twx y.ncd -o y.twr y.pcf 
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o y_map.ncd y.ngd y.pcf 
+par -w -intstyle ise -ol high -mt off y_map.ncd y.ncd y.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml y.twx y.ncd -o y.twr y.pcf 
+xst -intstyle ise -ifn "F:/UNI/projects/ise/squareRootCalculator/y.xst" -ofn "F:/UNI/projects/ise/squareRootCalculator/y.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 y.ngc y.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o y_map.ncd y.ngd y.pcf 
+par -w -intstyle ise -ol high -mt off y_map.ncd y.ncd y.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml y.twx y.ncd -o y.twr y.pcf 

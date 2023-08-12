@@ -1,0 +1,28 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o F:/UNI/projects/ise/squareRootCalculator/sqrtcalc_tb_isim_beh.exe -prj F:/UNI/projects/ise/squareRootCalculator/sqrtcalc_tb_beh.prj work.sqrtcalc_tb 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "F:/UNI/projects/ise/squareRootCalculator/FA.vhd" into library work
+Parsing VHDL file "F:/UNI/projects/ise/squareRootCalculator/CAS.vhd" into library work
+Parsing VHDL file "F:/UNI/projects/ise/squareRootCalculator/Y.vhd" into library work
+Parsing VHDL file "F:/UNI/projects/ise/squareRootCalculator/X.vhd" into library work
+Parsing VHDL file "F:/UNI/projects/ise/squareRootCalculator/sqrtcalculator.vhd" into library work
+Parsing VHDL file "F:/UNI/projects/ise/squareRootCalculator/sqrtcalc_tb.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling architecture behavioral of entity FA [fa_default]
+Compiling architecture behavioral of entity CAS [cas_default]
+Compiling architecture behavioral of entity X [x_default]
+Compiling architecture behavioral of entity y [y_default]
+Compiling architecture behavioral of entity sqrtcalculator [sqrtcalculator_default]
+Compiling architecture behavior of entity sqrtcalc_tb
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 14 VHDL Units
+Built simulation executable F:/UNI/projects/ise/squareRootCalculator/sqrtcalc_tb_isim_beh.exe
+Fuse Memory Usage: 35756 KB
+Fuse CPU Usage: 389 ms

@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "F:/UNI/projects/ise/squareRootCalculator/FA.xst" -ofn "F:/UNI/projects/ise/squareRootCalculator/FA.syr" 

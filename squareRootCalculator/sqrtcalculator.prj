@@ -1,0 +1,5 @@
+vhdl work "FA.vhd"
+vhdl work "CAS.vhd"
+vhdl work "Y.vhd"
+vhdl work "X.vhd"
+vhdl work "sqrtcalculator.vhd"

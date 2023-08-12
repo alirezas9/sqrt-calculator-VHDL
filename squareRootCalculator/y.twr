@@ -1,0 +1,87 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml y.twx y.ncd -o y.twr y.pcf
+
+Design file:              y.ncd
+Physical constraint file: y.pcf
+Device,package,speed:     xc7a100t,csg324,C,-3 (PRODUCTION 1.10 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+A11            |CO1            |    5.406|
+A11            |S11            |    5.362|
+A12            |CO1            |    5.168|
+A12            |CO2            |    5.440|
+A12            |S11            |    5.302|
+A12            |S21            |    5.931|
+A22            |CO2            |    5.061|
+A22            |S21            |    5.414|
+A22            |S22            |    5.183|
+CI1            |CO1            |    5.367|
+CI1            |CO2            |    5.552|
+CI1            |S11            |    5.688|
+CI1            |S21            |    6.043|
+CI2            |CO2            |    5.156|
+CI2            |S21            |    5.268|
+CI2            |S22            |    5.586|
+DI1            |CO1            |    5.691|
+DI1            |CO2            |    5.408|
+DI1            |DO1            |    4.474|
+DI1            |S11            |    5.831|
+DI1            |S21            |    5.721|
+DI2            |CO1            |    5.471|
+DI2            |CO2            |    5.988|
+DI2            |DO2            |    4.514|
+DI2            |S11            |    5.603|
+DI2            |S21            |    6.479|
+DI2            |S22            |    5.622|
+PI1            |CO1            |    5.149|
+PI1            |CO2            |    5.645|
+PI1            |PO1            |    4.494|
+PI1            |S11            |    5.290|
+PI1            |S21            |    6.136|
+PI2            |CO2            |    5.255|
+PI2            |PO2            |    4.492|
+PI2            |S21            |    5.630|
+PI2            |S22            |    5.619|
+---------------+---------------+---------+
+
+
+Analysis completed Tue Apr 04 00:32:57 2023 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 5003 MB
+
+
+

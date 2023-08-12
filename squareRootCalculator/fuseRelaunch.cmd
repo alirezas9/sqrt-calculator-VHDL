@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "F:/UNI/projects/ise/squareRootCalculator/sqrtcalc_tb_isim_beh.exe" -prj "F:/UNI/projects/ise/squareRootCalculator/sqrtcalc_tb_beh.prj" "work.sqrtcalc_tb" 
